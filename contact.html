@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="contact.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Informations personnelles</legend><br>
+            <div class="nom">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required placeholder="Indiquez votre Nom">
+            </div><br>
+
+            <div class="prenom">
+                <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required placeholder="Indiquez votre prénom">
+            </div><br>
+
+           <div class="email">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required placeholder="Indiquez votre email">
+           </div><br>
+
+            <div class="tel">
+                <label for="tel">N° téléphone :</label>
+            <input type="text" id="tel" name="tel" required placeholder="Indiquez votre numéro de tel">
+            </div>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Informations de contact</legend><br>
+            <div class="sujet">
+            <label for="sujet">Sujet</label>
+            <input type="text" id="sujet" name="sujet" required>
+            </div><br>
+
+            <div class="message">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="50" rows="20" required>
+            </textarea>
+            </div>
+
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

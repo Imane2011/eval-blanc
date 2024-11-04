@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "coordonnes experiences"
+    "coordonnes education"
+    "coordonnes competences"
+    "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 2%;
+
+}
+
+header{
+    grid-area: header;
+    background-color: lightblue;
+    padding-bottom: 2%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+}
+
+header h1{
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+.coordonnes{
+    grid-area: coordonnes;
+    /* grid-area: coordonnes;
+    grid-area: coordonnes; */
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+}
+
+.coordonnes img{
+    width: 40%;
+    padding: 2%;
+}
+
+.coordonnes h2{
+    color: red;
+    padding: 2%;
+}
+
+.coordonnes p{
+    padding: 2%;
+}
+
+
+.experiences{
+    grid-area: experiences;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+}
+
+.experiences h2{
+    color: red;
+    padding: 2%;
+}
+
+.experiences h3{
+    padding: 2%;
+}
+
+.experiences p{
+    padding: 2%;
+}
+
+
+.education{
+    grid-area: education;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+}
+
+.education h2{
+    color: red;
+    padding: 2%;
+}
+
+.education p{
+    padding: 2%;
+}
+
+.competences{
+    grid-area: competences;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+    
+}
+
+.competences li{
+    list-style-type: none;
+}
+
+.competences h2{
+    color: red;
+    padding: 2%;
+}
+
+.competences li{
+    padding: 2%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5% 0%;
+}
+
+footer h2{
+    color: red;
+    padding: 2%;
+}
+
+footer p{
+    padding: 2%;
+}
+
+@media (max-width: 768px){
+    .cv-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "coordonnes"
+        "experiences"
+        "education"
+        "competences"
+        "footer";
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}
+
+
